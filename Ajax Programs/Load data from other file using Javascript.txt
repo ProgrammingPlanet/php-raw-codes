@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ajax</title>
+		
+	</head>
+	<body>
+		<div id="d1"><h2>This is going to change</h2></div>
+		<button onclick="myfun()" >click</button>
+
+		<script type="text/javascript">
+			function myfun(){
+				var req = new XMLHttpRequest();
+				req.open('GET','file.html',true);
+				req.send();
+
+				req.onreadystatechange = function(){
+					if(req.status == 200){
+						document.getElementById('d1').innerHTML = req.responseText;
+					}
+					else
+					{alert("somthing went wrong");}
+				}
+			}
+
+		</script>
+	</body>
+</html>

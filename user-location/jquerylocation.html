@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script language="JavaScript" src="https://raw.githubusercontent.com/ProgrammingPlanet/Web_Devs/master/location.js" type="text/javascript"></script>
+
+</head>
+<body>
+	<script>
+		$.ajax({
+			url : 'http://www.geoplugin.net/json.gp',
+			async: false,
+			type: 'GET',
+			data: {},
+			success:function(data){
+				raw = JSON.parse(data);
+				user_location = [];
+				for(i in raw){
+					if(i==="request")
+						user_location["IP"] = raw[i];
+					else if(i!="geoplugin_credit")
+						user_location[i.split('_')[1]] = raw[i];
+				}
+
+			}
+
+		});
+
+		console.log(user_location);
+	</script>
+</body>
+</html>
+

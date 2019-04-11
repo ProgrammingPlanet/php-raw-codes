@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Ajax</title>	
+		<script  type="text/javascript" src="jquery-3.3.1.min.js"></script>
+			
+	</head>
+	<body>
+	 	<div>
+	 		<h1><p id="p1"> This is paragraph to be change....</p></h1>
+	 		<button id="b1"> click me</button>
+	 	</div>
+	 	<script type="text/javascript">
+	 		$(document).ready(function(){ 
+	 			$("#b1").click(function(){
+	 			//this is get methode..
+	 				$.get('get.html',function(data,status){ //data and status are name only not Keywords which contain recived data and status(succes or fail) respectivly.
+	 					$("#p1").html(data);
+	 					alert("Recived Data: "+data+"status: "+status);
+	 				});
+	 			// this is post methode
+	 				$.post("file.php",{
+	 					//sending data(optional)
+	 						D1:"Hello", //D1,D2 is like value of name attribute 
+	 						D2:"World"
+	 					},function(data,status){
+	 						$("#p1").html(data);
+	 						alert("Recived Data: "+data+" status: "+status);
+	 				});
+	 			});
+	 			
+
+	 		});
+
+	 	</script>
+	</body>
+</html>

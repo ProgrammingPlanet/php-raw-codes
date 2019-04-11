@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootsrap Practical</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap4/css/bootstrap.min.css"/>
+	<script src="bootstrap4/js/jquery-3.3.1.min.js"></script>
+	<script src="bootstrap4/js/popper.min.js"></script>
+	<script src="bootstrap4/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container"><br><br><br>
+		<h1 class="text-center"> Navigation Tabs in bootstrap </h1><br><br><br>
+		<ul class="nav nav-tabs nav-justified"> <!-- nav-justified for propper menu -->
+			<li class="nav-item">
+				<a href="#home" class="nav-link active" data-toggle="tab"> Homepage </a>
+			</li>
+			<li class="nav-item">
+				<a href="#profile" class="nav-link" data-toggle="tab"> Profile </a>
+			</li>
+			<li class="nav-item">
+				<a href="#msg" class="nav-link" data-toggle="tab"> Messages </a>
+			</li>
+			<li class="nav-item">
+				<a href="#not" class="nav-link" data-toggle="tab"> Notifications </a>
+			</li>
+			<li class="nav-item">
+				<a href="#lo" class="nav-link" data-toggle="tab"> Logout </a>
+			</li>
+		</ul>
+
+		<div class="tab-content">
+			<div class="tab-pane active" id="home"><br><br><br>
+				<h1 class="text-center text-info">HomePage</h1><br>
+				<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="tab-pane" id="profile"><br><br><br>
+				<h1 class="text-center text-info">Profile</h1><br>
+				<p class="text-success">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="tab-pane" id="msg"><br><br><br>
+				<h1 class="text-center text-success">Messages</h1><br>
+				<p class="text-info">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="tab-pane" id="not"><br><br><br>
+				<h1 class="text-center text-info">Notification</h1><br>
+				<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="tab-pane" id="lo"><br><br><br>
+				<h1 class="text-center text-info">Log Out</h1><br>
+				<button class="btn btn-lg btn-outline-info m-auto d-block">Log Out</button>
+			</div>
+		</div>
+
+	</div>
+<br><br>
+</body>
+</html>
