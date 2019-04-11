@@ -5,7 +5,6 @@
  
 $agent = $_SERVER['HTTP_USER_AGENT'];
 
-//print_r($agent); exit;
  
 // Detect Device/Operating System
  
